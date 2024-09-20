@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love for You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6f6;
+            font-family: 'Cursive', sans-serif;
+            color: #444;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        .heart {
+            color: #ff4081;
+            font-size: 2em;
+            animation: pulse 1.5s infinite;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .signature {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #444;
+            margin-top: 40px;
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        /* Keyframes for animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Background music */
+        .music-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff4081;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .music-container img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>For You, My Love</h1>
+
+        <p>My dearest My Vaishnavi,</p>
+
+        <p>
+           I can't never thank you for making me a better person and fixing me everytime i was wrong, helped me in every situation no matter what happens but now when im thinking that you are going to leave me that makes me cry that i didn't fulfilled what i want, that is to heal you and make you happy always
+        </p>
+
+        <div class="heart">❤️</div>
+
+        <p>
+            But im not giving up no matter what, i'll make you fall in love with me again and this time i'll do my very best to make you happy and not hurt you. I promise i'm not going to be a headache for you or suffocate you ever again but i'll be your stress reliever and peace. 
+        </p>
+
+        <div class="image-container">
+            <img src="C:\Users\Acer\Pictures\Camera Roll\her.jpg" alt="A beautiful memory together">
+        </div>
+
+        <p>
+            And ye jo upar hai na? ye mere hai inko maai apne se kabhi dur nhi hone dunga na kabhi pyar krna chodhunga, apko chodhne ki baat se aise lagta h life ka ek hi meaning tha or wo bhi chala gya ab kya krna hai jee ke. Mai apse sachi be-inteha pyar krta hu or hmesha karta rhunga jab tak meri saase ruk nhi jati, is chehre ko dekhna kabhi band ni kr skta, apko dekh ke jeene ki icha hoti hai ki jeena hai but apne liye nhi jinhe pyar krta hu unke liye. Mai nhi chodh paunga apko kabhi, na mai apko apne se dur hone dunga vaishnavi.Ab jo pyar aap deserve krte the wo milega apko or kuch nhi, apko itna kush rkhunga aap khwaabo me bhi ni soch paoge,i hope and i'll do my best ki ham apni zindagi ke akhir tak pyar kre ek dusre ko. i love you and thank you for everything meri vaishnavi.
+        </p>
+
+        <p class="signature">
+            Forever yours,<br>
+            your rondu
+        </p>
+    </div>
+
+    <!-- Background music (optional) -->
+    <div class="music-container">
+        <img src="ds" alt="Play Music" onclick="playMusic()">
+    </div>
+
+    <!-- Add your music -->
+    <audio id="loveSong" loop>
+        <source src="C:\Users\Acer\Downloads\Teri Jhuki Nazar - Murder 3 320 Kbps (mp3cut.net).mp3" type="audio/mpeg">
+      
+    </audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('loveSong');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
+
